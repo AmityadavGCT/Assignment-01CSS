@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add CSS</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /*Class Selector*/
+        .Div{
+            background-color: grey; border: 4px solid blue; padding: 25px;
+        }
+        .heading{
+            color: brown; text-decoration: underline; font-size: x-large; font-style: italic;
+        }
+        .Pra{
+            color: rgb(235, 240, 235); margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Question:1&nbsp;Create a simple page with some div tags and show different ways to add CSSas well as what as what happens when you target the same elements with inline. internal, and external CSS. Also, rtillze coments in the project where required.</b></p>
+    <b>Ans:</b>
+    <!-- Inline CSS -->
+    <Div style="background-color: aqua; border: 4px solid black; padding: 20px;" >
+        <h1 style="color: brown; text-decoration: underline; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Add Inline CSS:-</h1>
+        <p style="margin: 3px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, aliquam ipsam ad odio nihil expedita repellat molestias animi commodi voluptate?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate vero sapiente labore tempora ratione autem molestiae! Doloremque autem cupiditate adipisci!</p>
+    </Div><br>
+    <!-- Internal CSS -->
+    <Div class="Div">
+        <h1 class="heading">Add Internal CSS:-</h1>
+        <p class="Pra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, aliquam ipsam ad odio nihil expedita repellat molestias animi commodi voluptate?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis a repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorum nemo delectus est doloribus, autem quidem aspernatur alias ab obcaecati modi esse quod quia, exercitationem expedita consequatur rem tempore corrupti!</p>
+    </Div><br>
+    <!-- External CSS -->
+    <Div class="Abc">
+        <h1 class="heading1">Add External CSS:-</h1>
+        <p class="Pra1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, aliquam ipsam ad odio nihil expedita repellat molestias animi commodi voluptate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed eius libero quidem porro enim sunt dolor, odio eum minima alias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis at dolorem expedita, officiis enim libero modi autem possimus minima non placeat consectetur nihil suscipit ipsam saepe doloribus fugiat? Animi est explicabo assumenda, rem, commodi, unde aperiam ab non sed nobis quia sit aliquam enim ea corrupti labore nam. Nam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit atque eaque quas distinctio debitis quaerat.</p>
+    </Div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="Bbb">
+    <p><b>Question:2&nbsp;Build an HTML page with multiple paragraphs, each assigned a unique class name. Write CSS rules using class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and explain how you've name the classes.</b></p>
+    <b>Ans:</b>
+    <!-- BEM SELECTOR -->
+    <div class="card">
+        <div class="card__image">
+            <img src="./profile pic.jpg" alt="" class="card__photo">
+        </div>
+        <div class="card__content">
+            <span class="card__title">BEM SELECTOR</span>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum totam, illum qui tempora beatae dolorem suscipit ipsam impedit atque enim?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, possimus?</p>
+        </div>
+        <div class="card__footer">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p><b>Question:3&nbsp;Develop an HTML form with various input elements. Use CSS to style the form, including setting background colors for input fields. Create a custom color palette for the form elemests, and demonstrate how to apply opacity to one of the form sections.</b></p>
+    <b>Ans:</b><br><br>
+    <form action="" style="text-align: center;" class="Form">
+        <label style="text-transform: capitalize; font-weight: bold; text-decoration: underline; padding-top: 5px;">Registration Form</label><br><br><br>
+        <DIV class="Frist">
+            <label for="Frist Name" class="Frist">Frist Name:</label>
+            <input type="text" placeholder="Frist Name" id="Frist Name">
+        </DIV><br><br>
+        <DIV class="Last">
+            <label for="Last Name">Last Name:</label>
+            <input type="tel" placeholder="Last Name" id="Last Name" class="Last">
+        </DIV><br><br>
+        <DIV class="email">
+            <label for="Email">Email:</label>
+            <input type="email" placeholder="Abc@gmail.com" id="Email" class="Email">
+        </DIV><br><br>
+        <DIV class="DOB">
+            <label for="DOB">DOB:</label>
+            <input type="date" name="DOB" id="DOB">
+        </DIV><br><br>
+        <DIV class="password">
+            <label for="Password">Password:</label>
+            <input type="password"  id="Password" class="Password">
+        </DIV><br><br>
+        <div class="Sel">
+            <select name="Select State" id="" class="Select">
+                <option value="">Select State</option>
+                <option value="">Uttar pradesh</option>
+                <option value="">Bihar</option>
+                <option value="">Madhya pradesh</option>
+                <option value="">Hariyana</option>
+                <option value="">Rjashtan</option>
+                <option value="">Gujrat</option>
+           </select>
+        </div><br>
+        <div class="call">
+            <label for="Number">Phone Number:</label>
+            <input type="tel" id="Number" class="Number">
+        </div><br><br>
+        <div>
+            <label for="Gender"  class="Trans">Gender:</label>
+            <label for="">Male</label>
+            <input type="radio" name="Gender">
+            <label for="">Female</label>
+            <input type="radio" name="Gender">
+        </div><br>
+       <button type="reset" style="color: blue;">Reset</button>
+       <button type="submit" style="color: rgb(8, 8, 227);">submit</button>
+    </form>
+</body>
+</html>

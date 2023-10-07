@@ -1,0 +1,75 @@
+/*Class Selector*/
+.Abc{
+    background-color: azure; border: 5px solid yellow;
+}
+.heading1{
+    color: blue; text-decoration: underline; font-size: xx-large; padding-left: 20px;
+}
+.Pra1{
+    font-style: italic; margin: 3px; padding: 20px;
+}
+
+/*BEM SELECTOR*/
+.card{
+    background-color: yellow;
+    height: 300px;
+    width: 400px;
+    border: 3px solid black;
+    padding: 10px;
+}
+.card__image{
+    border-bottom: 2px;
+    text-align: center;
+    padding: 10px;
+}
+.card__photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+.card__title{
+    font-weight: bold;
+}
+.card__content{
+    padding: 10px;
+    font-style: italic;
+}
+.card__footer{
+    color: blue;
+    font-size: small;
+    text-align: center;
+}
+
+/*Question:3 Form CSS*/
+.Form{
+    text-align: center;
+    border: 2px double black;
+    background-color: rgb(179, 177, 177);
+    max-height: fit-content;
+    max-width: fit-content;
+}
+.Frist {
+    color: #a52a2a;
+}
+.Last{
+    color: blueviolet;
+}
+.password{
+    color: #ff0000;
+}
+.email{
+    color: blue;
+}
+.Trans{
+    color: #ff0095;
+}
+.DOB{
+    color: yellow;
+}
+.sel{
+    color: green;
+}
+.call{
+    color: hwb(8 5% 1% / 0.902);
+    opacity: .30;
+}
